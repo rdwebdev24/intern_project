@@ -8,10 +8,10 @@ import {ImStatsBars} from 'react-icons/im'
 import StatModel from './StatModel';
 
 const Statics = () => {
-     const [imageIndex, setImageIndex] = useState(0);
-     const [modelDisp,setModelDisp] = useState(0)
-     const [modelData,setModelData] = useState('')
-     const [slideToshow,setSlideToShow] = useState(3);
+  const [imageIndex, setImageIndex] = useState(0);
+  const [modelDisp,setModelDisp] = useState('0')
+  const [modelData,setModelData] = useState('')
+  const [slideToshow,setSlideToShow] = useState(3);
 
      useEffect(()=>{
       const width = document.body.getBoundingClientRect().width
@@ -48,7 +48,6 @@ const Statics = () => {
         const handleDetail = (item) => {
           setModelDisp('1')
           setModelData(item)
-          console.log(item);
         }
   return (
     <section id='StatisticWrapper'>

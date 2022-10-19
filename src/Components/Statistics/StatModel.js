@@ -1,7 +1,6 @@
 import React from 'react'
 
 const StatModel = ({modelDisp,setModelDisp,modelData}) => {
-     
      const {title,detail,total,amount} = modelData
      const closeHandler = () => {
           setModelDisp('0')
