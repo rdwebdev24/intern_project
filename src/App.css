@@ -57,27 +57,6 @@ ul{
      top: -80px;
      transition: all 0.3s linear;
  }
-@media screen and (max-width:425px) {
-     ul{
-          position: absolute;
-          top: 100%;
-          left: 0;
-          width: 100%;
-          background-color: #fff;
-          height: 0;
-          overflow: hidden;
-          display: flex;
-          flex-direction: column;
-          gap: 0;
-     }
-     li{
-          box-shadow: 0 3px 4px #b1abab4d;
-          padding: 0.7rem 1rem;
-     }
-     .hamburger{
-          display: block;
-     }
-}
 
 /* PROPOSAL CSS */
 
@@ -158,30 +137,6 @@ h1 {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 860px) {
-  .card {
-    max-width: 20rem;
-  }
-}
-
-@media screen and (max-width: 786px) {
-  #proposal_wrapper {
-    padding: 0;
-  }
-}
-@media screen and (max-width: 600px) {
-  .porpasal_box {
-    padding: 0 1rem;
-  }
-  .card {
-    max-width: 100%;
-  }
-}
-@media screen and (max-width: 425px) {
-  #proposal_wrapper {
-    max-width: 100%;
-  }
-}
 
 /* STATISTIC COMPONENT */
 
@@ -276,7 +231,7 @@ h1 {
      align-items: center;
      height: 100%;
      width: 100%;
-     max-height: 60vh;
+     height: 60vh;
      max-width: 50vw;
      padding: 0 2rem;
      gap: 2rem;
@@ -284,13 +239,9 @@ h1 {
      background: #ffffff;
      box-shadow:  20px 20px 60px #d9d9d9,
              -20px -20px 60px #ffffff;
+     z-index: 999;
 }
 
-@media screen and (max-width:786px) {
-     .slide {
-          max-width: 100% !important;
-        }
-}
 
 /* CLIENT REVIEW CSS */
 #clientWrapper{
@@ -352,6 +303,13 @@ h1 {
      cursor: pointer;
 }
 
+
+
+
+
+
+
+
 @media screen and (max-width:768px) {
      .clientReviewCard{
           display: flex;
@@ -360,7 +318,30 @@ h1 {
      .clientImg{
           width: 7rem;
      }
-     
+     #proposal_wrapper {
+          padding: 0;
+     }  
+     .slide {
+          max-width: 100% !important;
+     }
+}
+
+@media screen and (max-width: 860px) {
+     .card {
+       max-width: 20rem;
+     }
+   }
+   
+   @media screen and (max-width: 600px) {
+     .porpasal_box {
+       padding: 0 1rem;
+     }
+     .card {
+       max-width: 100%;
+     }
+     .statModel{
+          max-width: 100%;
+     }
 }
 @media screen and (max-width:425px) {
      .clientImg{
@@ -372,4 +353,27 @@ h1 {
      #clientWrapper{
           padding: 0 1rem;
      }
+     #proposal_wrapper {
+          max-width: 100%;
+     }
+     ul{
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background-color: #fff;
+          height: 0;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+     }
+     li{
+          box-shadow: 0 3px 4px #b1abab4d;
+          padding: 0.7rem 1rem;
+     }
+     .hamburger{
+          display: block;
+     }
+    
 }
