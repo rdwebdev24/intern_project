@@ -186,6 +186,7 @@ h1 {
 /* STATISTIC COMPONENT */
 
 #StatisticWrapper {
+  background-color: #eee;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -293,6 +294,7 @@ h1 {
 
 /* CLIENT REVIEW CSS */
 #clientWrapper{
+     background-color: #eee;
      min-height: 100vh;
      display: flex;
      flex-direction: column;
