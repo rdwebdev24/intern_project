@@ -2,6 +2,7 @@ import React from 'react'
 
 const StatModel = ({modelDisp,setModelDisp,modelData}) => {
      const {title,detail,total,amount} = modelData
+     console.log(modelData,'fsfgs');
      const closeHandler = () => {
           setModelDisp('0')
      }
